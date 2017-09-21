@@ -12,7 +12,7 @@ namespace conditional_statements
             userInput = Console.ReadLine();
 
             int evaluetedNumber;
-            int.TryParse(UserInput, out evaluatedNumber);
+            int.TryParse(userInput, out evaluetedNumber);
 
             if(evaluetedNumber < 0)
             {
