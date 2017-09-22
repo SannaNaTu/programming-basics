@@ -5,14 +5,19 @@ namespace conditional_statements
     class Program
     {
         static void Main(string[] args)
+
         {
+
+
             // Define instructions
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+
             Console.WriteLine("Ohjelma tulostaa positiivinen, negatiivinen tai nolla. ");
             bool isNumber;
             do
             {
 
-                Console.Write("Syota luku: ");
+                Console.Write("Syötä luku: ");
                 // Define variables
                 string userInput;
                 userInput = Console.ReadLine();
@@ -38,7 +43,7 @@ namespace conditional_statements
                 }
                 else
                 {
-                    Console.WriteLine("Syotit muuta kuin numeroita!");
+                    Console.WriteLine("Syötit muuta kuin numeroita!");
                 }
             } while (isNumber == false);
 
