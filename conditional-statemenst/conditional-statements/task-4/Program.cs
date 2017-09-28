@@ -11,52 +11,138 @@ namespace task_4
             // Define instructions
             Console.WriteLine("Ohjelma lajittelee luvut nousevaan järjestykseen. Anna ohjelmalle kolme lukua ");
 
-            Console.Write("Syotä luku yksi: ");
-            // Define valuables
-            string userInput;
-            userInput = Console.ReadLine();
+            //numero 1 = X
 
-            int numberX;
-          int.TryParse(userInput, out numberX);
+
+            
+
+                Console.Write("Syotä luku yksi: ");
+
+                string userInput;
+                userInput = Console.ReadLine();
+
+                int numberX;
+                int.TryParse(userInput, out numberX);
+
+                
+           
+
+
+            //numero 2 = Y
 
             Console.Write("Syotä luku kaksi: ");
-            // Define valuables
-          
+
+
             userInput = Console.ReadLine();
 
             int numberY;
             int.TryParse(userInput, out numberY);
 
+            //numero 3 = Z
+
             Console.Write("Syotä luku kolme: ");
-            // Define valuables
-          
+
+
             userInput = Console.ReadLine();
 
             int numberZ;
             int.TryParse(userInput, out numberZ);
-            
-             if (numberX < numberY) 
-            {
-                if (numberX < numberZ)
 
-                        
-                {
-                    if (numberY < numberZ)
+            //alla turha rivi
+            //Console.WriteLine(numberX + " " +numberY +" "+ numberZ );
+
+
+            {
+                if (numberX < numberY)
+
+
+                    if (numberX < numberZ)
                     {
-                        Console.WriteLine($"(numberX) (numberY) (numberZ)");
+
+                        if (numberY < numberZ)
+                        {
+
+
+                            Console.WriteLine(numberX + " " + numberY + " " + numberZ);
+                        }
+
+                        else
+
+                            Console.WriteLine(numberX + " " + numberZ + " " + numberY);
+                    }
+
+                    else
+
+                        Console.WriteLine(numberZ + " " + numberX + " " + numberY);
+
+
+
+
+                else
+                {
+
+                    if (numberX < numberZ)
+
+                    {
+
+                        Console.WriteLine(numberY + " " + numberX + " " + numberZ);
 
                     }
-             else
-                   
-               
+
+                    else
+
+
+
+                    if (numberY < numberZ)
+
+                    {
+
+                        Console.WriteLine(numberZ + " " + numberY + " " + numberX);
+
+                    }
+
+
+                    else
+
+                        Console.WriteLine(numberY + " " + numberZ + " " + numberX);
+
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            {
+
+                Console.WriteLine("Hyvää Päivänjatkoa!");
+
+        }
+                
+        
+        
+
+
+                
+        
+         
+
+            Console.ReadKey();
+
+                
             
-
-
-
-
-
-
-
         }
     }
 }
+
+    
+
