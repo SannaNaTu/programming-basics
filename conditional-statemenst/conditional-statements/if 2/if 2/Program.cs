@@ -12,7 +12,7 @@ namespace if_2
 
             Console.WriteLine("Maatalousnäyttelyn lipunhinta");
             Console.Write("Anna nimesi:");
-            Console.ReadLine();
+            string userName = Console.ReadLine();
 
 
             float discount = 0;
@@ -75,7 +75,7 @@ namespace if_2
                         
                     }
                 }
-                Console.WriteLine($"Lipun hintasi on: {price-(price*discount/100)}€");
+                Console.WriteLine($"Hei {userName} lippusi hinta on: {price-(price*discount/100)}€");
                 Console.ReadLine();
 
 

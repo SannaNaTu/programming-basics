@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "if 2", "if 2\if 2.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testikenttä", "ConsoleApp1\testikenttä.csproj", "{5B5C5DFE-EDAC-494A-A4D5-36E53F1E176A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task3", "ConsoleApp2\task3.csproj", "{8DF74491-F74A-4ECD-9CD1-95140911E143}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5B5C5DFE-EDAC-494A-A4D5-36E53F1E176A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B5C5DFE-EDAC-494A-A4D5-36E53F1E176A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B5C5DFE-EDAC-494A-A4D5-36E53F1E176A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DF74491-F74A-4ECD-9CD1-95140911E143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DF74491-F74A-4ECD-9CD1-95140911E143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DF74491-F74A-4ECD-9CD1-95140911E143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DF74491-F74A-4ECD-9CD1-95140911E143}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
