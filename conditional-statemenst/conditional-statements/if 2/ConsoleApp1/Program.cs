@@ -31,7 +31,7 @@ namespace ConsoleApp1
 
                 // tai console.writeline($"{i} kertoma on yhtäsuuri kuin 
 
-            // ota tehtävässä writeline tästä välistä pois
+           
             } while (i < number);
             
             Console.WriteLine($"Syötit: { number} \nVastaus: { f} ");

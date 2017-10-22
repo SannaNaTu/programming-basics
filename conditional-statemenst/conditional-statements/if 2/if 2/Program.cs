@@ -50,7 +50,7 @@ namespace if_2
                 Console.Write("Oletko varusmies? Y/N : ");
                 String conscriptResponse = Console.ReadLine().ToUpper();
 
-                if (conscriptResponse == "Y" && discounted == false)
+                if (conscriptResponse == "Y" )
                 {
                     discount = 50;
                     
@@ -60,7 +60,7 @@ namespace if_2
                     Console.Write("Oletko MTK:n jäsen? Y/N :");
                     String mtkResponse = Console.ReadLine().ToUpper();
 
-                    if (mtkResponse == "Y" && discounted == false)
+                    if (mtkResponse == "Y" )
                     {
                         discount = 15;
                         
