@@ -12,26 +12,29 @@ namespace if_2
             string userName = Console.ReadLine();
             float discount = 0;
             float price = 16;
-            bool discounted = false;
+            
             // ikä alennus
             Console.Write("Anna Ikäsi:");
             int age = int.Parse(Console.ReadLine());
             if (age < 7)
             {
                 discount = 100;
-                discounted = true;
+                Console.WriteLine($"Hei {userName} lippusi hinta on: {price - (price * discount / 100)}€");
+                Console.ReadLine();
             }
-            else if (age >= 7 && age <= 15 && discounted == false)
+            else if (age >= 7 && age <= 15 )
             {
                 discount = 50;
-                discounted = true;
+                Console.WriteLine($"Hei {userName} lippusi hinta on: {price - (price * discount / 100)}€");
+                Console.ReadLine();
             }
-            else if (age >= 65 && discounted == false)
+            else if (age >= 65 )
             {
                 discount = 100;
-                discounted = true;
+                Console.WriteLine($"Hei {userName} lippusi hinta on: {price - (price * discount / 100)}€");
+                Console.ReadLine();
             }
-            if (age > 15 && age < 65)
+            else if (age > 15 && age < 65)
             {
                 Console.Write("Oletko varusmies? Y/N : ");
                 String conscriptResponse = Console.ReadLine().ToUpper();
