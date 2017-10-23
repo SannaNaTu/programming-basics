@@ -1,13 +1,13 @@
 ﻿using System;
 
-namespace task_3._2
+namespace Lisäprojekti
 {
     class Program
     {
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-            Console.WriteLine("Anna luku ykkösestä ylöspäin. Ohjelma laskee yhteen antamasi numeron sekä sitä edeltäneet numerot ");
+            Console.WriteLine("*******");
             string userInput = Console.ReadLine();
             int number = int.Parse(userInput);
             int sum = 0;
@@ -16,16 +16,17 @@ namespace task_3._2
             {
                 Console.WriteLine("Annoit liian pienen arvon.");
             }
-            else 
-           {
+            else
+            {
                 do
                 {
-                    i++;
-                    sum = sum + i;
-                } while (i < number);
+                    i--;
+                    sum = sum - i;
+
+                } while (i < 10 ); // syötetty arvo - 10
                 Console.WriteLine($"vastaus: {sum}");
             }
-                Console.ReadKey();
+            Console.ReadKey();
         }
     }
 }
