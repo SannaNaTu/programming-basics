@@ -17,14 +17,12 @@ namespace Task_3._4
             {
                 k = -1;
             }
-           
                 do
                 {
                     i++;
                     sum = sum + i;
                 } while (i < number*k);
                 Console.WriteLine($"vastaus: {sum*k}");
-            
             Console.ReadKey();
         }
     }
