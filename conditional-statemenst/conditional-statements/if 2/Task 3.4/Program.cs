@@ -12,19 +12,19 @@ namespace Task_3._4
             int number = int.Parse(userInput);
             int sum = 0;
             int i = 0;
+            int k = 1;
             if (number < 1)
             {
-                Console.WriteLine("Annoit liian pienen arvon.");
+                k = -1;
             }
-            else
-            {
+           
                 do
                 {
                     i++;
                     sum = sum + i;
-                } while (i < number);
-                Console.WriteLine($"vastaus: {sum}");
-            }
+                } while (i < number*k);
+                Console.WriteLine($"vastaus: {sum*k}");
+            
             Console.ReadKey();
         }
     }
