@@ -18,7 +18,6 @@ namespace task_3._5
                 k = -1;
             }
 
-
             for (int i = 1; i <= number*k; i++)
             {
                 if (i % 2 == 0)
