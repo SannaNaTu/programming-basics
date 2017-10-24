@@ -6,6 +6,7 @@ namespace task_4._33
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine("Ohjelma tulostaa  20 satunnaista kokonaislukua valilta 0-50");
             Random rnd = new Random();
 
