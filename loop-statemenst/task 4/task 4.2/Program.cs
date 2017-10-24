@@ -8,16 +8,13 @@ namespace task_4._2
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine("Ohjelma tulostaa 20 satunnaista kokonaislukua väliltä 0-50 ");
-            for (int i = 1; i <= 50; i++)
-            {
-                Random rnd = new Random();
-                rnd.Next(100);
-                Console.WriteLine(i);
-            }
-
+            Random r = new Random(); 
+                Console.WriteLine($"Rivi 1: {r.Next(50)},{r.Next(50)},{r.Next(50)},{r.Next(50)},{r.Next(50)}");
+                Console.WriteLine($"Rivi 2: {r.Next(50)},{r.Next(50)},{r.Next(50)},{r.Next(50)},{r.Next(50)}");
+                Console.WriteLine($"Rivi 3: {r.Next(50)},{r.Next(50)},{r.Next(50)},{r.Next(50)},{r.Next(50)}");
+                Console.WriteLine($"Rivi 4: {r.Next(50)},{r.Next(50)},{r.Next(50)},{r.Next(50)},{r.Next(50)}");
                 Console.ReadKey();
-
         }
-        
     }
 }
+
