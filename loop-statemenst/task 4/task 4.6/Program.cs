@@ -10,7 +10,6 @@ namespace task_4._6
             Console.WriteLine("Ohjelma heittää 1000 kertaa noppaa puolestasi ja kertoo kuinka moni niistä oli kuutonen.");
             Random rnd = new Random();
             int sixCounter = 0;
-
             for (int number = 0; number < 1000; number++)
             {
                 int rndNumber = rnd.Next(1, 7);
