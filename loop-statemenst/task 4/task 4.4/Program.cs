@@ -16,7 +16,7 @@ namespace task_4._4
             int userThrow = int.Parse(UserInput);
             int heads = 0;
             int tails = 0;
-            for ( int i = 0; i < userThrow; i++)
+            for (int i = 0; i < userThrow; i++)
             {
                 int j = rnd.Next(2);
                 if (j == 0)
