@@ -27,7 +27,7 @@ namespace Task_5._3
                 userInput = Console.ReadLine();
                 isNumber = int.TryParse(userInput, out x);
                 if (isNumber)
-                    if (x > lowerBound && x < upperBound)
+                    if (x >= lowerBound && x <= upperBound)
                     {
                         retNumber = x;
                         isValidNumber = true;

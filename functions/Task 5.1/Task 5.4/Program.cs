@@ -20,9 +20,9 @@ namespace Task_5._4
             //Countteri
                 for (int i = 0; i < 10; i++)
                 {
-                    Console.Write($"{i + 1}\t= ");
+                    Console.Write($"{i + 1}= ");
 
-                    if (isNumber = int.TryParse(Console.ReadLine(), out num) && num > 0)
+                    if (isNumber = int.TryParse(Console.ReadLine(), out num) && num >= 0)
                     {
                         if (max < num)
                     {
