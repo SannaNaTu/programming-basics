@@ -11,7 +11,7 @@ namespace Task_6._1
             Random rnd = new Random();
             int i = 0;
             int[] lotto = new int[40];
-            int addnumber; //kumpi?
+            //int addnumber; //kumpi?
             int doublenumber;
 
                 while (i < 7)
@@ -38,17 +38,18 @@ namespace Task_6._1
                 for (i = 0; i < lotto.Length; i++) // tarviiko intin
                     if (lotto[i] == 1)
                         lottonumbers += $"{i + 1} ";
-            //int addnumber;
+            int addnumber = 0;
             for ( i = 0; i < lotto.Length; i++) // tarviiko intin
                     if (lotto[i] == 2)
                     {
                         addnumber = i + 1;
                     break;
-                    }
+                }
             for (i = 0; i < lotto.Length; i++)
             {
                 {
                     doublenumber = rnd.Next(0, 39 + 1);
+                    
                 }
                 {
                     Console.WriteLine($"Lottonumerosi ovat:{lottonumbers} lisänumero:{addnumber} ja tuplausnumero:{doublenumber}");
@@ -59,7 +60,6 @@ namespace Task_6._1
                 //Lottonron tulostus
                 //Lisänron tulostus
                 //Tuplausnro
-
                 Console.ReadKey();
             }
 
