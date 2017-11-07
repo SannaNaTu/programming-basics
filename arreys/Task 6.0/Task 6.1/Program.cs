@@ -13,7 +13,6 @@ namespace Task_6._1
             int[] lotto = new int[40];
             //int addnumber; //kumpi?
             int doublenumber;
-
                 while (i < 7)
                 {
                     int rndIndex = rnd.Next(0, 39 + 1);
@@ -32,29 +31,26 @@ namespace Task_6._1
                         break;
                     }
                 }
-          
                 string lottonumbers = "";
             
-                for (i = 0; i < lotto.Length; i++) // tarviiko intin
+                for (i = 0; i < lotto.Length; i++) 
                     if (lotto[i] == 1)
                         lottonumbers += $"{i + 1} ";
-            int addnumber = 0;
-            for ( i = 0; i < lotto.Length; i++) // tarviiko intin
+            int extranumber = 0;
+            for ( i = 0; i < lotto.Length; i++) 
                     if (lotto[i] == 2)
                     {
-                        addnumber = i + 1;
+                        extranumber = i + 1;
                     break;
                 }
             for (i = 0; i < lotto.Length; i++)
             {
                 {
                     doublenumber = rnd.Next(0, 39 + 1);
-                    
                 }
                 {
-                    Console.WriteLine($"Lottonumerosi ovat:{lottonumbers} lisänumero:{addnumber} ja tuplausnumero:{doublenumber}");
+                    Console.WriteLine($"Lottonumerosi ovat:{lottonumbers} lisänumero:{extranumber} ja tuplausnumero:{doublenumber}");
                 }
-
                 // Lotto arvonta
                 //Lisänumeron arvonta
                 //Lottonron tulostus
