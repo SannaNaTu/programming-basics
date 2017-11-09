@@ -13,34 +13,34 @@ namespace Task_6._1
             int[] lotto = new int[40];
             //int addnumber; //kumpi?
             int doublenumber;
-                while (i < 7)
+            while (i < 7)
+            {
+                int rndIndex = rnd.Next(0, 39 + 1);
+                if (lotto[rndIndex] == 0)
                 {
-                    int rndIndex = rnd.Next(0, 39 + 1);
-                    if (lotto[rndIndex] == 0)
-                    {
-                        lotto[rndIndex] = 1;
-                        i++;
-                    }
+                    lotto[rndIndex] = 1;
+                    i++;
                 }
-                while (true)
+            }
+            while (true)
+            {
+                int rndIndex = rnd.Next(0, 39 + 1);
+                if (lotto[rndIndex] == 0)
                 {
-                    int rndIndex = rnd.Next(0, 39 + 1);
-                    if (lotto[rndIndex] == 0)
-                    {
-                        lotto[rndIndex] = 2;
-                        break;
-                    }
+                    lotto[rndIndex] = 2;
+                    break;
                 }
-                string lottonumbers = "";
-            
-                for (i = 0; i < lotto.Length; i++) 
-                    if (lotto[i] == 1)
-                        lottonumbers += $"{i + 1} ";
+            }
+            string lottonumbers = "";
+
+            for (i = 0; i < lotto.Length; i++)
+                if (lotto[i] == 1)
+                    lottonumbers += $"{i + 1} ";
             int extranumber = 0;
-            for ( i = 0; i < lotto.Length; i++) 
-                    if (lotto[i] == 2)
-                    {
-                        extranumber = i + 1;
+            for (i = 0; i < lotto.Length; i++)
+                if (lotto[i] == 2)
+                {
+                    extranumber = i + 1;
                     break;
                 }
             for (i = 0; i < lotto.Length; i++)
