@@ -12,7 +12,7 @@ namespace Task_6._1
             int i = 0;
             int[] lotto = new int[40];
             int doublenumber;
-            // Arvotaan oikea lottorivi
+            // Arvotaan lottonumero
             while (i < 7)
             {
                 int rndIndex = rnd.Next(0, 39 + 1);
@@ -22,7 +22,7 @@ namespace Task_6._1
                     i++;
                 }
             }
-            //Arvotaan lisänro
+            //Arvotaan lisänumero
             while (true)
             {
                 int rndIndex = rnd.Next(0, 39 + 1);
@@ -40,6 +40,7 @@ namespace Task_6._1
                 if (lotto[i] == 1)
                     lottonumbers += $"{i + 1} ";
             }
+            // Tulostus lisänumerolle
             int extranumber = 0;
             for (i = 0; i < lotto.Length; i++)
             {
@@ -49,9 +50,9 @@ namespace Task_6._1
                     break;
                 }
             }
-
+            //Tulostus tuplausnumerolle
             doublenumber = rnd.Next(0, 39 + 1);
-
+            //Tekstin tulostus
             Console.WriteLine($"Lottonumerosi ovat:{lottonumbers} lisänumero:{extranumber} ja tuplausnumero:{doublenumber}");
             Console.ReadKey();
 
