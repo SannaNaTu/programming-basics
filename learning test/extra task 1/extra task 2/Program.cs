@@ -10,7 +10,7 @@ namespace extra_task_2
             Console.WriteLine("Minäpä tiedän luvun väliltä 1-100, jota sinä et tiedä!");
             Random rnd = new Random();
             int UserInput = 0;
-            int number = rnd.Next(100);
+            int number = rnd.Next(10);
             int sum = 0;
             while (number != UserInput)
 
@@ -23,10 +23,10 @@ namespace extra_task_2
                 }
                 else if (UserInput > number)
                 {
-                    
+
                     Console.WriteLine("Lukuni on pienempi!");
                 }
-                else 
+                else
                 {
                     //sum = UserInput;
                     UserInput++;
@@ -34,11 +34,17 @@ namespace extra_task_2
                     break;
                 }
             }
+
             Console.ReadKey();
-
-        }
-
-           
         }
     }
+}
+
+           
+        
+
+           
+        
+    
+
 
