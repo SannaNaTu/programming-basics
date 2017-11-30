@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Task_5
 {
@@ -12,13 +13,22 @@ namespace Task_5
             Console.Write("Anna lause:");
             string UserInput = Console.ReadLine().ToUpper();
 
+
                foreach (char letter in UserInput)
                 {
-                if (letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U' || letter == 'Y' || letter == 'Ä' || letter == 'Ö')
+                if (IsVowel(letter))
                     count++;
                     }
                 Console.WriteLine($"Vokaaleita on: {count}");
             Console.ReadLine();
+        }
+
+        static bool IsVowel(char letter)
+        {
+            if (letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U' || letter == 'Y' || letter == 'Ä' || letter == 'Ö')
+                return true;
+            else
+                return false;
         }
     }
 }
