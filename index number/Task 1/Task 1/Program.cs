@@ -6,7 +6,8 @@ namespace Task_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Ohjelma tarkistaa viitenumeron!");
+            Console.Write("Anna lause:");
         }
     }
 }
