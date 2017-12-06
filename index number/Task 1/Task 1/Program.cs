@@ -6,6 +6,7 @@ namespace Task_1
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine("Ohjelma tarkistaa viitenumeron!");
             Console.Write("Anna numero:");
 
